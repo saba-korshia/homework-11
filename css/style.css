@@ -1,0 +1,163 @@
+:root{
+    --dark_opacity: #00000033;
+    --shadow_light: #dfd9d966;
+    --primary_color: #1c5550;
+    --button: #C3B97F;
+    --text_frame: #DFD9D9;
+    --current_line: #91B599;
+    --text_size: 14px;
+    --special_size: 18px;
+    --title_size: 24px;
+    --border_radius: 4px;
+}
+.grid_container{
+    width: 1440px;
+    margin: auto;
+    display: grid;
+    padding: 32px 20px;
+    background-color: var(--primary_color);
+    column-gap: 40px;
+    row-gap: 48px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10px 150px 150px 300px;
+    grid-template-areas:
+    "HEADER HEADER HEADER HEADER"
+    "ASIDE ACARD ACARD IMG1"
+    "ASIDE ACARD ACARD IMG2"
+    "CARD1 CARD2 CARD3 CARD4";
+}
+header{
+    display: flex;
+    grid-area: HEADER;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_ul{
+    display: flex;
+    column-gap: 84px;
+}
+.header_a{
+    color: var(--text_frame);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--special_size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 32px;
+}
+.search{
+    display: flex;
+    width: 315px;
+    height: 32px;
+    padding: 8px 20px 7px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 100px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.20) inset, 0px -0.3px 1px 0px rgba(223, 217, 217, 0.40) inset; 
+
+}
+.text{
+    color: var(--current_line);
+    font-family: Inter;
+    font-size: var(--text_size);
+}
+.user_icon{
+    padding: 4px;
+    border-radius: var(--border_radius);
+    background: var(--dark_opacity);
+    box-shadow: 0px 2px 4px -2px var(--shadow_light) inset, 0px 2px 4px 0px var(--dark_opacity);
+
+}
+.cart_icon{
+    padding: 4px;
+    border-radius: var(--border_radius);
+    background: var(--dark_opacity);
+    box-shadow: 0px 2px 4px -2px var(--shadow_light) inset, 0px 2px 4px 0px var(--dark_opacity);
+
+} 
+aside{
+    grid-area: ASIDE;
+    display: grid;
+    background: var(--dark_opacity);
+    box-shadow: 0px 4px 4px 0px var(--dark_opacity) inset, 0px -1px 4px 0px var(--shadow_light) inset;
+}
+.title{
+    color: var(--button);
+    margin: 38px 0 16px 40px;
+    font-family: 'Inter', sans-serif;
+    line-height: 27px;
+}
+.active_text{
+    color: var(--current_line);
+    margin-left: 48px;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text_size);
+    font-weight: 700;
+    line-height: 25px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--current_line);
+}
+.aside_text{
+   
+        color: #C3B97F;
+        margin-left: 48px;
+        font-family: 'Inter', sans-serif;
+        font-size: var(--text_size);
+        line-height: 25px;
+     }
+     .big_card {
+        grid-area: ACARD;
+        position: relative;
+    }
+    
+    .card_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+
+ 
+    .img_1_card {
+        grid-area: IMG1;
+    }
+    
+
+    
+    .img_2_card {
+      grid-area: IMG2;
+    }
+    
+ 
+    .img_card_1 {
+        grid-area: CARD1;
+        position: relative;
+        
+    }
+    
+    .img_card_2 {
+        grid-area: CARD2;
+        position: relative;
+    }
+    
+    .img_card_3 {
+        grid-area: CARD3;
+        position: relative;
+    }
+    
+    .img_card_4 {
+        grid-area: CARD4;
+        position: relative;
+    }
+    
+    
+
+    
